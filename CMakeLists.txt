@@ -3,4 +3,8 @@ project(bactobot_sim)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-add_executable(bactobot_sim ${SOURCE_FILES})
+message("${CMAKE_CXX_FLAGS}")
+
+add_subdirectory(tests)
+
+message("${PROJECT_BINARY_DIR}")
